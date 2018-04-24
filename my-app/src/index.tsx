@@ -15,6 +15,7 @@ export const client = new ApolloClient({
     // Pass the configuration option { uri: YOUR_GRAPHQL_API_URL } to the `HttpLink` to connect
     // to a different host
     cache: new InMemoryCache(),
+    connectToDevTools: true,
     link: new HttpLink({ uri: 'https://api.graphcms.com/simple/v1/cjgdru4lq8bga0130mj3hka3z' }),
 });
 
